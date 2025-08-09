@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# notebooks
+notebooks/

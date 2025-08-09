@@ -1,0 +1,17 @@
+{
+	"name": "langjsbook",
+	"version": "0.1.0",
+	"description": "Notebook to run langchain",
+	"keywords": [
+		"langchain",
+		"llm",
+		"jupyter"
+	],
+	"license": "MIT",
+	"author": "Sourav Ray",
+	"scripts": {
+		"docker:build": "docker build -t langchain-js-env -f ./docker/images/Dockerfile ./",
+		"docker:up": "docker-compose --file ./docker/compose/docker-compose.yml up -d",
+		"docker:down": "docker-compose --file ./docker/compose/docker-compose.yml down"
+	}
+}

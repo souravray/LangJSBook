@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  langchain-app:
+    image: langchain-js-env
+    container_name: langchain_js_jupyter
+    
+
+    # Mount local 'notebooks' folder directly to the '/app'
+    volumes:
+      - ../../notebooks:/app
+
+    ports:
+      - "8888:8888"
+
+    env_file:
+      - ../../.env
+
+    restart: unless-stopped
+    platform: linux/amd64
