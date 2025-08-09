@@ -83,7 +83,8 @@ RUN npm install -g \
 	cheerio \
 	csv-parse \
 	dotenv \
-	pdf-parse
+	pdf-parse \
+	zod
 
 # Expose JupyterLab port
 EXPOSE 8888
