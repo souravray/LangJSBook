@@ -70,6 +70,7 @@ RUN ldconfig
 RUN npm init -y
 RUN npm install -g \
 	langchain@latest \
+	@langchain/core@latest \
 	@langchain/community@latest \
 	@langchain/openai@latest \
 	@langchain/google-genai@latest \
